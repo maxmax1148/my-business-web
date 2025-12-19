@@ -51,27 +51,24 @@ a:hover {
 
 
 .hero {
-    height: 100vh;
-    background-image: url("C:/1012/pic/bg.webp") center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
+    padding: 60px 20px;          
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("C:/1012/pic/bg.webp") center/cover no-repeat;
 
-h1,
-h2 {
-    text-transform: uppercase;    
-    letter-spacing: 0.15rem;     
+    color: var(--accent-color);
+    text-align: center;
 }
 
 .hero h1 {
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-size: 3rem;
 }
 
-h3 {
-    letter-spacing: 0.1rem;
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
 }
 
 
@@ -80,10 +77,12 @@ h3 {
 }
 
 .card {
-    padding: 1.5rem;
-    margin: 1.5rem;
+    padding: 20px;                     
+    margin: 10px 0;                   
+    border: 1px solid #ddd;
+    border-radius: 8px;
     background-color: #fff;
-    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 
@@ -103,25 +102,31 @@ h3 {
 }
 
 #header {
-    background-color: #000000;
-    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
 
+#header nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+#header nav ul li {
+    margin-right: 1.5rem;       
+}
+
+#header nav ul li a {
+    display: block;
+    padding: 15px 20px;         
+    color: var(--accent-color);
 }
 
 #footer {
-    background-color: #111111;
-    color: #ffffff;
-    text-align: center;
-    padding: 1.5rem;
+    padding: 30px 20px;
     margin-top: 3rem;
-}
-
-#header nav ul li a:hover {
-  color: #e50914;          
-  border-bottom: 2px solid #e50914;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    text-align: center;
 }
 
 
@@ -159,9 +164,9 @@ html {
 
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px;     
+    margin: 0 auto;        
+    padding: 40px 20px;    
 }
 
 .cards {
