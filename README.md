@@ -1,48 +1,114 @@
-# Netflix Website
+# Netflix Business Website
 
-เว็บไซต์ตัวอย่างสำหรับธุรกิจ Netflix  
-พัฒนาโดยใช้ HTML5 และ CSS3 เพื่อฝึกการใช้งานโครงสร้างเว็บและการจัดสไตล์ด้วย Selector ต่าง ๆ
-
-เว็บไซต์ประกอบด้วยหน้าเว็บทั้งหมด 4 หน้า ได้แก่ หน้าแรก, เกี่ยวกับ, บริการ และติดต่อ
+เว็บไซต์ตัวอย่างสำหรับธุรกิจ Netflix พัฒนาเพื่อการเรียนรู้ **HTML5 + CSS3**  
+โดยเน้นการใช้ **CSS Fundamentals, Responsive Design และ Layout Systems** 
 
 ---
 
-## 📄 โครงสร้างหน้าเว็บไซต์
 
-### 1. หน้าแรก (index.html)
-- Header พร้อม Logo และ Navigation
-- Hero Section แนะนำธุรกิจ
+### 1. Homepage (index.html)
+- Header + Logo + Navigation
+- Hero Section (Full screen)
 - Featured Services
 - Footer
 
----
+### 2. About Page (about.html)
+- Company Story
+- Team Members (ใช้ `<figure>` และ `<figcaption>`)
+- Vision & Mission
 
-### 2. หน้าเกี่ยวกับ (about.html)
-- เรื่องราวและข้อมูลบริษัท
-- ทีมงาน (ใช้ `<figure>` และ `<figcaption>`)
-- วิสัยทัศน์ และพันธกิจ
-- Navigation เชื่อมกลับหน้าอื่น ๆ
+### 3. Services Page (services.html)
+- Services List (`<section>` + `<article>`)
+- Pricing Comparison Table
 
----
-
-### 3. หน้าบริการ (services.html)
-- รายการบริการ (ใช้ `<section>` และ `<article>`)
-- ตารางเปรียบเทียบแพ็กเกจ (Basic / Premium / Enterprise)
-
----
-
-### 4. หน้าติดต่อ (contact.html)
-- Contact Form พร้อมการตรวจสอบข้อมูลเบื้องต้น (Validation)
-- แสดงที่อยู่บริษัท
-- ฝัง Google Maps
+### 4. Contact Page (contact.html)
+- Contact Form (Flex layout)
+- Company Address
+- Google Maps Embed
 
 ---
 
-## 🛠️ เทคโนโลยีที่ใช้
-- HTML5
-- CSS3
+### CSS Fundamentals
+- Universal Selector & Reset
+- Element Selectors (`h1–h4`, `p`, `a`)
+- Class Selectors (`.hero`, `.card`, `.btn`, `.section`)
+- ID Selectors (`#header`, `#footer`)
+- Pseudo-classes (`:hover`, `:active`, `:first-child`, `:nth-child`)
+- CSS Variables (`:root`)
+
+### CSS Units & Responsive Design
+- **px**: border, box-shadow
+- **rem**: typography, spacing
+- **%**: container width, images
+- **vw / vh**: hero section, responsive text
+- Responsive images (`max-width: 100%`)
+
+### Colors & Typography
+- Custom color palette (primary, secondary, accent, neutral)
+- Web-safe fonts
+- Font hierarchy (h1 > h2 > h3 > p)
+- Line-height 1.6 for readability
+- Text effects (uppercase, letter-spacing, shadow optional)
+
+### Box Model
+- Padding, margin, border, border-radius
+- Card layout with shadow
+- Container centered with max-width
+
+### Positioning
+- Sticky header navigation
+- Absolute positioning for hero content
+- Fixed elements (Back to Top, Chat Widget)
+- Z-index layering
+
+### Layout Systems
+- Flexbox (navigation, services, forms)
+- CSS Grid (team members)
+- Responsive multi-column layouts
+
+### Hover & Interaction Effects
+- Button hover & active effects
+- Card hover animation
+- Navigation underline animation
+- Smooth transitions
+
+---
+
+## Code Quality & Best Practices
+
+- Organized CSS sections with comments
+- Kebab-case naming conventions
+- Reusable components (`.btn`, `.card`, `.section`)
+- No unused CSS rules
+- Clean and readable code
+
+---
+
+## Development Tools
+
+- Visual Studio Code
+- Live Server Extension
 - Git & GitHub
 
 ---
 
-## 📁 โครงสร้างไฟล์
+## Git Commit Strategy
+
+- Commit ทุกครั้งเมื่อเสร็จแต่ละส่วน
+- ใช้ commit message ที่มีความหมาย เช่น:
+  - `style: add typography and color palette`
+  - `feat: add hover and interaction effects`
+  - `refactor: reorganize styles.css`
+
+---
+
+## Deployment
+
+- Push source code ไปยัง GitHub repository
+- ใช้ Live Server สำหรับ local development
+
+---
+
+## Author
+
+จัดทำเพื่อการศึกษาในรายวิชา **Web Development (HTML & CSS)**
